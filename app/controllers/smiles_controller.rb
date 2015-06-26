@@ -55,13 +55,14 @@ class SmilesController < ApplicationController
            format.html { redirect_to :controller => 'welcome', :action => 'index', notice: 'Smile was successfully created.' }
            format.json { render json: @smile, status: :created, location: @smile }
          else
+           #TODO remove this or redirect
            format.html { render action: "new" }
            format.json { render json: @smile.errors, status: :unprocessable_entity }
          end
        end
     # spam detected
     else
-      render "hallo"
+      redirect_to :controller => 'welcome', :action => 'index', notice: 'Sorry, but your smile seems to be spam.'
     #   format.html { render action: "new" }
     #   format.json { render json: @smile.errors, status: :unprocessable_entity }
     end
@@ -131,6 +132,6 @@ spam_words.each do |word|
  end
 
  spam_score
- 
+
 end
 end

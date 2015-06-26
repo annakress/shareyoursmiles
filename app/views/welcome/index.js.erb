@@ -1,0 +1,3 @@
+// infinite scrolling for smiles
+$('#smiles').append('<%= escape_javascript render(@smiles) %>');
+$('.pagination').replaceWith('<%= escape_javascript will_paginate(@smiles) %>');

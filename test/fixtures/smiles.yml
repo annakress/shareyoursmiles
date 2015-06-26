@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  smiletext: MyString
+  username: MyString
+  country: MyString
+
+two:
+  smiletext: MyString
+  username: MyString
+  country: MyString

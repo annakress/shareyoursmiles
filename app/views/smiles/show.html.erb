@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Smiletext:</b>
+  <%= @smile.smiletext %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @smile.username %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @smile.country %>
+</p>
+
+
+<%= link_to 'Edit', edit_smile_path(@smile) %> |
+<%= link_to 'Back', smiles_path %>

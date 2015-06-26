@@ -1,0 +1,76 @@
+<div class="container">
+
+<div class="row">
+  <div class="two columns offset-by-ten"><div class="navi">
+  <a href="about.html">About</a> | <a href="FAQ.html">FAQ</a>
+</div></div></div>
+
+<div class="row"><div class="sixteen columns">
+  <h1>What gave you a smile today?</h1>
+</div></div>
+
+<div class="row"><div class="sixteen columns"><div class="smiles">
+  <%= @smiles.count %> Smiles
+</div></div></div>
+
+<div class="row"><div class="sixteen columns" align="center">
+    <%= form_for :smile, :url => {:controller => "smiles"} do |f| %>
+            <%= f.label "Your smile" %><br>
+            <%= f.text_area :smiletext, placeholder:"Your smile", :onkeyup => "countChar(this)" %>
+</div></div>
+
+<div class="row"><div class="sixteen columns" align="center">
+        <div id="charNum" class="char_count">500</div>
+</div></div>
+
+<div class="row">
+  <div class="five columns">&nbsp;
+  </div>
+  <div class="three columns" align="center">
+            <%= f.text_field :username, placeholder:"Your name (optional)" %>
+  </div>
+
+  <div class="three columns" align="center">
+            <%= f.select(:country, ['Your country (optional)','Germany', 'Spain', 'USA']) %>
+  </div>
+  <div class="five columns">&nbsp;
+    <span style="display:none;visibility:hidden;">
+      <label for="email">
+        Your email:
+      </label>
+      <input type="text" name="email" size="10" value="" />
+    </span>
+  </div>
+</div>
+
+<div class="row"><div class="sixteen columns" align="center">
+            <%= f.submit "Share your smile" %>
+    <% end %>
+</div></div>
+
+<div id="smiles">
+    <% @smiles.each do |smile| %>
+        <div class="row">
+          <div class="four columns">&nbsp;
+          </div>
+        <div class="eight columns"><div class="smile">
+        <%= smile.smiletext %>
+        </div>
+        </br >
+        <div class="whosmileswhere">
+        <%= if (smile.username != "") then smile.username else "Someone" end %>
+        smiling
+        <%= if (smile.country != "somewhere") then "in " + smile.country else smile.country end  %>
+        </div></div>
+        <div class="four columns">&nbsp;
+        </div>
+
+        </div>
+    <% end %>
+</div>
+
+<div class="row"><div class="sixteen columns" align="center">
+    <%= will_paginate @smiles %>
+</div>
+
+</div>

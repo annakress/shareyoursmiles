@@ -16,6 +16,7 @@
 <div class="row"><div class="sixteen columns" align="center">
     <%= form_for :smile, :url => {:controller => "smiles"} do |f| %>
             <%= f.label "Your smile" %><br>
+            <p id="notice"><%= notice %></p>
             <%= f.text_area :smiletext, placeholder:"Your smile", :onkeyup => "countChar(this)" %>
 </div></div>
 
@@ -33,6 +34,7 @@
   <div class="three columns" align="center">
             <%= f.select(:country, ['Your country (optional)','Germany', 'Spain', 'USA']) %>
   </div>
+
   <div class="five columns">&nbsp;
     <span style="display:none;visibility:hidden;">
       <label for="email">

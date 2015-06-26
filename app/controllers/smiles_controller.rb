@@ -36,10 +36,10 @@ class SmilesController < ApplicationController
     end
   end
 
-  # GET /smiles/1/edit
-  def edit
-    @smile = Smile.find(params[:id])
-  end
+  # # GET /smiles/1/edit
+  # def edit
+  #   @smile = Smile.find(params[:id])
+  # end
 
   # POST /smiles
   # POST /smiles.json
@@ -52,49 +52,47 @@ class SmilesController < ApplicationController
     if ( @spamscore == 0)
          respond_to do |format|
          if @smile.save
-           format.html { redirect_to :controller => 'welcome', :action => 'index', notice: 'Smile was successfully created.' }
-           format.json { render json: @smile, status: :created, location: @smile }
+           flash[:notice] = 'Smile was successfully created.'
+           format.html { redirect_to :controller => 'welcome', :action => 'index' }
          else
-           #TODO remove this or redirect
-           format.html { render action: "new" }
-           format.json { render json: @smile.errors, status: :unprocessable_entity }
+           flash[:notice] = 'Sorry, but your smile could not be saved.'
+           format.html { redirect_to :controller => 'welcome', :action => 'index' }
          end
        end
     # spam detected
     else
-      redirect_to :controller => 'welcome', :action => 'index', notice: 'Sorry, but your smile seems to be spam.'
-    #   format.html { render action: "new" }
-    #   format.json { render json: @smile.errors, status: :unprocessable_entity }
+      flash[:notice] = 'Sorry, but your smile seems to be spam.'
+      redirect_to :controller => 'welcome', :action => 'index'
     end
   end
 
-  # PUT /smiles/1
-  # PUT /smiles/1.json
-  def update
-    @smile = Smile.find(params[:id])
-
-    respond_to do |format|
-      if @smile.update_attributes(params[:smile])
-        format.html { redirect_to @smile, notice: 'Smile was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @smile.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /smiles/1
-  # DELETE /smiles/1.json
-  def destroy
-    @smile = Smile.find(params[:id])
-    @smile.destroy
-
-    respond_to do |format|
-      format.html { redirect_to smiles_url }
-      format.json { head :no_content }
-    end
-  end
+  # # PUT /smiles/1
+  # # PUT /smiles/1.json
+  # def update
+  #   @smile = Smile.find(params[:id])
+  #
+  #   respond_to do |format|
+  #     if @smile.update_attributes(params[:smile])
+  #       format.html { redirect_to @smile, notice: 'Smile was successfully updated.' }
+  #       format.json { head :no_content }
+  #     else
+  #       format.html { render action: "edit" }
+  #       format.json { render json: @smile.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
+  #
+  # # DELETE /smiles/1
+  # # DELETE /smiles/1.json
+  # def destroy
+  #   @smile = Smile.find(params[:id])
+  #   @smile.destroy
+  #
+  #   respond_to do |format|
+  #     format.html { redirect_to smiles_url }
+  #     format.json { head :no_content }
+  #   end
+  # end
 
 protected
 

@@ -46,10 +46,10 @@ class SmilesController < ApplicationController
   def create
 
     @smile = Smile.new(params[:smile])
+    @spamscore = spamScore(params[:smile][:smiletext], params[:smile][:username], params[:email])
 
-    if (notSpam(params[:smile][:smiletext], params[:smile][:username], params[:email]))
-    # detect a spambot which filled in the hidden email field
-    # if params[:email] == ""
+    # check if smile is not spam
+    if ( @spamscore == 0)
          respond_to do |format|
          if @smile.save
            format.html { redirect_to :controller => 'welcome', :action => 'index', notice: 'Smile was successfully created.' }
@@ -59,7 +59,7 @@ class SmilesController < ApplicationController
            format.json { render json: @smile.errors, status: :unprocessable_entity }
          end
        end
-    # spambot detected
+    # spam detected
     else
       render "hallo"
     #   format.html { render action: "new" }
@@ -97,7 +97,7 @@ class SmilesController < ApplicationController
 
 protected
 
-def notSpam(smiletext, username, email)
+def spamScore(smiletext, username, email)
 
 spam_words = %w{
       -online 4u 4-u acne adipex advicer baccarrat blackjack bllogspot booker buy byob carisoprodol
@@ -130,12 +130,7 @@ spam_words.each do |word|
  end
  end
 
- puts spam_score
-
- if(spam_score > 0)
-  false
- else
-  true
- end
+ spam_score
+ 
 end
 end

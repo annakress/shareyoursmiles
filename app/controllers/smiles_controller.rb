@@ -52,7 +52,7 @@ class SmilesController < ApplicationController
     if ( @spamscore == 0)
          respond_to do |format|
          if @smile.save
-           flash[:notice] = 'Smile was successfully created.'
+           flash[:notice] = 'Thank you for sharing your beautiful smile!'
            format.html { redirect_to :controller => 'welcome', :action => 'index' }
          else
            flash[:notice] = 'Sorry, but your smile could not be saved.'

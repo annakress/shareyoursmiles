@@ -7,22 +7,15 @@
 </div></div></div>
 
 <div class="row"><div class="sixteen columns">
-  <h1>What made you smile today?</h1><div class="fa fa-camera-retro"></div> fa-camera-retro
+  <h1>What made you smile today?</h1>
 </div></div>
-
-<div class="row"><div class="sixteen columns"><div class="smiles">
-  <%= @smiles.count %> Smiles
-</div></div></div>
 
 <div class="row"><div class="sixteen columns" align="center">
     <%= form_for :smile, :url => {:controller => "smiles"} do |f| %>
-            <%= f.label "Your smile" %><br>
+            <!-- <%= f.label "Your smile" %><br> -->
             <p id="notice"><%= notice %></p>
-            <%= f.text_area :smiletext, placeholder:"Your smile", :onkeyup => "countChar(this)" %>
-</div></div>
-
-<div class="row"><div class="sixteen columns" align="center">
-        <div id="charNum" class="char_count">500</div>
+            <%= f.text_area :smiletext, placeholder:"Share your smile", :onkeyup => "countChar(this)" %>
+            <div id="charNum" class="char_count">500</div>
 </div></div>
 
 <div class="row">
@@ -47,9 +40,15 @@
 </div>
 
 <div class="row"><div class="sixteen columns" align="center">
-            <%= f.submit "Share your smile" %>
-    <% end %>
+            <%= f.submit 'Share your smile' %>
 </div></div>
+
+    <% end %>
+
+<br />
+    <div class="row"><div class="sixteen columns"><div class="smiles_counter">
+      <p><div class="fa fa-smile-o">&nbsp;</div><%= @smiles.count %> Smiles <div class="fa fa-smile-o"></div></p>
+    </div></div></div>
 
 <div id="smiles">
     <% @smiles.each do |smile| %>

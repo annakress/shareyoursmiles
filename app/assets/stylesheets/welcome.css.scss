@@ -9,64 +9,85 @@ body {
 
 h1 {text-align:center; font-size: 35px;  font-family: 'LoveYaLikeASisterSolid' }
 
-textarea {resize: none;  width: 550px; height: 100px; }
+textarea {resize: none;  width: 550px; height: 100px; font-size: 16px; font-family: 'Verdana' }
 
-.navi {text-align:center;}
+.navi {text-align:center; font-family: 'Verdana'; color: #ffffff;}
 
-.smiles_counter {text-align:center; font-size: 20px}
+.smiles_counter {text-align:center; font-size: 20px; font-family: 'Verdana'; font-weight: bold;}
 
-.smiles {text-align:center; font-size: 20px  }
+// .smiles {text-align:center; font-size: 20px; font-family: 'Verdana' }
 
-.smile {text-align:left; font-size: 14px; font-family: 'LoveYaLikeASisterSolid' }
+.smile {text-align:left; font-size: 16px; font-family: 'Verdana' }
 
-.whosmileswhere {text-align:right; font-size: 12px }
+.whosmileswhere {text-align:right; font-size: 14px; font-family: 'Verdana' }
 
-.myButton {
-	-moz-box-shadow:inset 0px 0px 0px 0px #d9fbbe;
-	-webkit-box-shadow:inset 0px 0px 0px 0px #d9fbbe;
-	box-shadow:inset 0px 0px 0px 0px #d9fbbe;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52));
-	background:-moz-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
-	background:-webkit-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
-	background:-o-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
-	background:-ms-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
-	background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e356', endColorstr='#a5cc52',GradientType=0);
-	background-color:#b8e356;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #83c41a;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:25px;
-	font-weight:bold;
-	padding:14px 49px;
-	text-decoration:none;
-	text-shadow:0px 0px 0px #86ae47;
+.char_count {font-family: 'Verdana';}
+
+
+// .myButton {
+// 	-moz-box-shadow:inset 0px 0px 0px 0px #d9fbbe;
+// 	-webkit-box-shadow:inset 0px 0px 0px 0px #d9fbbe;
+// 	box-shadow:inset 0px 0px 0px 0px #d9fbbe;
+// 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52));
+// 	background:-moz-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+// 	background:-webkit-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+// 	background:-o-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+// 	background:-ms-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+// 	background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+// 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e356', endColorstr='#a5cc52',GradientType=0);
+// 	background-color:#b8e356;
+// 	-moz-border-radius:6px;
+// 	-webkit-border-radius:6px;
+// 	border-radius:6px;
+// 	border:1px solid #83c41a;
+// 	display:inline-block;
+// 	cursor:pointer;
+// 	color:#ffffff;
+// 	font-family:Arial;
+// 	font-size:25px;
+// 	font-weight:bold;
+// 	padding:14px 49px;
+// 	text-decoration:none;
+// 	text-shadow:0px 0px 0px #86ae47;
+// }
+// .myButton:hover {
+// 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #a5cc52), color-stop(1, #b8e356));
+// 	background:-moz-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+// 	background:-webkit-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+// 	background:-o-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+// 	background:-ms-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+// 	background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+// 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5cc52', endColorstr='#b8e356',GradientType=0);
+// 	background-color:#a5cc52;
+// }
+// .myButton:active {
+// 	position:relative;
+// 	top:1px;
+// }
+
+
+button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #ffda05;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
 }
-.myButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #a5cc52), color-stop(1, #b8e356));
-	background:-moz-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
-	background:-webkit-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
-	background:-o-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
-	background:-ms-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
-	background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5cc52', endColorstr='#b8e356',GradientType=0);
-	background-color:#a5cc52;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
 
+// .btn:hover {
+//   background: #ffdf40;
+//   background-image: -webkit-linear-gradient(top, #ffdf40, #ffdf40);
+//   background-image: -moz-linear-gradient(top, #ffdf40, #ffdf40);
+//   background-image: -ms-linear-gradient(top, #ffdf40, #ffdf40);
+//   background-image: -o-linear-gradient(top, #ffdf40, #ffdf40);
+//   background-image: linear-gradient(to bottom, #ffdf40, #ffdf40);
+//   text-decoration: none;
+// }
 
-.button:hover {
-}
-
-div.char_count {text-align:center;}
 
 @font-face {
   font-family: "Playfair Display";

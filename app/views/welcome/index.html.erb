@@ -1,9 +1,10 @@
-
+<br /><br />
 <div class="container">
 
 <div class="row">
   <div class="two columns offset-by-ten"><div class="navi">
-  <div class="shariff"></div><a href="about.html">About</a> | <a href="FAQ.html">FAQ</a>
+  <!-- <div class="shariff"></div> -->
+  <a href="about.html">About</a> | <a href="FAQ.html">FAQ</a>
 </div></div></div>
 
 <div class="row"><div class="sixteen columns">
@@ -13,7 +14,7 @@
 <div class="row"><div class="sixteen columns" align="center">
     <%= form_for :smile, :url => {:controller => "smiles"} do |f| %>
             <!-- <%= f.label "Your smile" %><br> -->
-            <p id="notice"><%= notice %></p>
+            <p id="notice" class="notice"><%= notice %></p>
             <%= f.text_area :smiletext, placeholder:"Share your smile", :onkeyup => "countChar(this)" %>
             <div id="charNum" class="char_count">500</div>
 </div></div>
@@ -145,7 +146,7 @@
 'Montenegro',
 'Morocco',
 'Mozambique',
-'Myanmar, (Burma)',
+'Myanmar (Burma)',
 'Namibia',
 'Nauru',
 'Netherlands',
@@ -236,6 +237,10 @@
     <% end %>
 
 <br />
+
+
+
+
     <div class="row"><div class="sixteen columns"><div class="smiles_counter">
       <p><div class="fa fa-smile-o">&nbsp;</div><%= @smiles.count %> Smiles <div class="fa fa-smile-o"></div></p>
     </div></div></div>

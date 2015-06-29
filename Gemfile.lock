@@ -45,6 +45,8 @@ GEM
     docile (1.1.5)
     erubis (2.7.0)
     execjs (2.5.2)
+    font-awesome-rails (4.3.0.0)
+      railties (>= 3.2, < 5.0)
     hike (1.2.3)
     i18n (0.7.0)
     journey (1.0.4)
@@ -149,6 +151,7 @@ PLATFORMS
 DEPENDENCIES
   betterlorem (~> 0.1.2)
   coffee-rails (~> 3.2.1)
+  font-awesome-rails
   jquery-rails
   rails (= 3.2.21)
   rails_best_practices

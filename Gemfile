@@ -15,6 +15,11 @@ gem 'betterlorem', '~> 0.1.2'
 
 gem 'will_paginate', '~> 3.0.7'
 
+#gem 'font-awesome-less'
+
+#gem 'font-awesome-sass'
+
+gem "font-awesome-rails"
 
 # Gems used only for assets and not required
 # in production environments by default.

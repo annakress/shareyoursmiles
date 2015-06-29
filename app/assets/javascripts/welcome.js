@@ -1,11 +1,10 @@
 // counting chars in textarea
 function countChar(val) {
-        var max_len = val.name.length;
         var len = val.value.length;
-        if (len >= max_len) {
-          val.value = val.value.substring(0, max_len);
+        if (len >= 500) {
+          val.value = val.value.substring(0, 500);
         } else {
-          $('#charNum').text(max_len - len);
+          $('#charNum').text(500 - len);
         }
       };
 

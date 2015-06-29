@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150624140002) do
+ActiveRecord::Schema.define(:version => 20150626150110) do
 
   create_table "smiles", :force => true do |t|
     t.string   "smiletext"
-    t.string   "username"
+    t.string   "username",   :default => "Someone"
     t.string   "country"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
     t.boolean  "spam"
   end
 

@@ -238,9 +238,6 @@
 
 <br />
 
-
-
-
     <div class="row"><div class="sixteen columns"><div class="smiles_counter">
       <p><div class="fa fa-smile-o">&nbsp;</div><%= @smiles.count %> Smiles <div class="fa fa-smile-o"></div></p>
     </div></div></div>
@@ -257,7 +254,7 @@
         <div class="whosmileswhere">
         <%= if (smile.username != "") then smile.username else "Someone" end %>
         smiling
-        <%= if (smile.country != "somewhere") then "in " + smile.country else smile.country end  %>
+        <%= if (smile.country != "Your country (optional)") then "in " + smile.country else "somewhere" end  %>
         </div></div>
         <div class="four columns">&nbsp;
         </div>

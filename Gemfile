@@ -7,6 +7,8 @@ gem 'rails', '3.2.21'
 
 gem 'sqlite3'
 
+gem 'mysql2'
+
 gem 'skeleton-rails', '~> 0.1.0'
 
 gem 'jquery-rails'
@@ -20,6 +22,9 @@ gem 'will_paginate', '~> 3.0.7'
 #gem 'font-awesome-sass'
 
 gem "font-awesome-rails"
+
+gem "capistrano-bundler"
+gem "capistrano-rails"
 
 # Gems used only for assets and not required
 # in production environments by default.

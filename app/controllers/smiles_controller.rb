@@ -53,16 +53,16 @@ class SmilesController < ApplicationController
          respond_to do |format|
          if @smile.save
            flash[:notice] = 'Thank you for sharing your beautiful smile!'
-           format.html { redirect_to :controller => 'welcome', :action => 'index' }
+           format.html { redirect_to "/" }
          else
            flash[:notice] = 'Sorry, but your smile could not be saved.'
-           format.html { redirect_to :controller => 'welcome', :action => 'index' }
+           format.html { redirect_to "/" }
          end
        end
     # spam detected
     else
       flash[:notice] = 'Sorry, but your smile seems to be spam.'
-      redirect_to :controller => 'welcome', :action => 'index'
+      redirect_to "/"
     end
   end
 

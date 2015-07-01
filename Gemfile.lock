@@ -181,6 +181,7 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   simplecov
   skeleton-rails (~> 0.1.0)
+  sprockets
   sqlite3
   test-unit (~> 3.0)
   uglifier (>= 1.0.3)

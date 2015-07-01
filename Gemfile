@@ -25,6 +25,7 @@ gem "font-awesome-rails"
 
 gem "capistrano-bundler"
 gem "capistrano-rails"
+gem "sprockets"
 
 # Gems used only for assets and not required
 # in production environments by default.

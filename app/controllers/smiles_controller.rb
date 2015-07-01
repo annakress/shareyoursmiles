@@ -1,6 +1,6 @@
 class SmilesController < ApplicationController
 
-  http_basic_authenticate_with name: "annakress", password: "secret", except: [:index, :show, :new, :create]
+  #http_basic_authenticate_with name: "annakress", password: "secret", except: [:index, :show, :new, :create]
   helper :smiles
 
   # GET /smiles

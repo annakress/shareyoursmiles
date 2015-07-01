@@ -4,10 +4,8 @@ lock '3.4.0'
 set :application, 'shareyoursmiles_app'
 #set :repo_url, 'git@example.com:me/my_repo.git'
 
-set :scm, :none
-set :repository, "."
-set :deploy_via, :copy
-set :repo_url, "."
+set :scm, :git
+set :repo_url, "https://github.com/annakress/shareyoursmiles.git"
 
 set :stages, ["staging", "production"]
 set :default_stage, "production"

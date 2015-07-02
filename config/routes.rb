@@ -6,4 +6,6 @@ Shareyoursmiles::Application.routes.draw do
   root :to => 'welcome#index'
 
   get '/faq', to: 'faq#index'
+
+  get '/legal', to: 'legal#index'
 end

@@ -5,10 +5,6 @@ gem 'rails', '3.2.21'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
-gem 'mysql2'
-
 gem 'skeleton-rails', '~> 0.1.0'
 
 gem 'jquery-rails'
@@ -16,6 +12,8 @@ gem 'jquery-rails'
 gem 'betterlorem', '~> 0.1.2'
 
 gem 'will_paginate', '~> 3.0.7'
+
+gem 'haml'
 
 #gem 'font-awesome-less'
 
@@ -25,6 +23,7 @@ gem "font-awesome-rails"
 
 gem "capistrano-bundler"
 gem "capistrano-rails"
+gem 'capistrano-passenger'
 gem "sprockets"
 
 # Gems used only for assets and not required
@@ -39,9 +38,13 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :production do
+  gem 'mysql2'
+end
+
 group :development do
-  gem 'rspec-rails'
   gem 'rails_best_practices'
+  gem 'sqlite3'
 end
 
 group :test do

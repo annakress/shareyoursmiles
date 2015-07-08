@@ -10,6 +10,11 @@ set :repo_url, "https://github.com/annakress/shareyoursmiles.git"
 set :stages, ["staging", "production"]
 set :default_stage, "production"
 
+require 'capistrano/passenger'
+set :passenger_roles, :app
+set :passenger_restart_with_touch, true
+set :passenger_restart_with_sudo, false
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 

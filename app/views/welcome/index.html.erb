@@ -4,18 +4,18 @@
 <div class="row">
   <div class="two columns offset-by-ten"><div class="navi">
   <!-- <div class="shariff"></div> -->
-  <a href="faq.html"><%= t('faq') %></a> | <a href="legal.html">Legal&Privacy</a>
+  <a href="faq.html"><%= t('app.views.welcome.index.faq') %></a> | <a href="legal.html"><%= t('app.views.welcome.index.legal_privacy') %></a>
 </div></div></div>
 
 <div class="row"><div class="sixteen columns">
-  <h1>What made you smile today?</h1>
+  <h1><%= t('app.views.welcome.index.what_made_you_smile_today') %></h1>
 </div></div>
 
 <div class="row"><div class="sixteen columns" align="center">
     <%= form_for :smile, :url => {:controller => "smiles"} do |f| %>
             <!-- <%= f.label "Your smile" %><br> -->
             <p id="notice" class="notice"><%= notice %></p>
-            <%= f.text_area :smiletext, placeholder:"Share your smile", :onkeyup => "countChar(this)" %>
+            <%= f.text_area :smiletext, placeholder:t('app.views.welcome.index.share_your_smile'), :onkeyup => "countChar(this)" %>
             <div id="charNum" class="char_count">500</div>
 </div></div>
 
@@ -23,11 +23,11 @@
   <div class="four columns">&nbsp;
   </div>
   <div class="four columns" align="center">
-            <%= f.text_field :username, placeholder:"Your name (optional)" %>
+            <%= f.text_field :username, placeholder: t('app.views.welcome.index.your_name') %>
   </div>
 
   <div class="four columns" align="center">
-            <%= f.select(:country, ['Your country (optional)','Afghanistan',
+            <%= f.select(:country, [t('app.views.welcome.index.your_country'),'Afghanistan',
 'Albania',
 'Andorra',
 'Angola',
@@ -223,7 +223,7 @@
   <div class="four columns">&nbsp;
     <span style="display:none;visibility:hidden;">
       <label for="email">
-        Your email:
+        <%= t('app.views.welcome.index.your_email') %>
       </label>
       <input type="text" name="email" size="10" value="" />
     </span>
@@ -231,7 +231,7 @@
 </div>
 
 <div class="row"><div class="sixteen columns" align="center">
-            <%= f.submit 'Share your smile' %>
+            <%= f.submit t('app.views.welcome.index.share_your_smile_btn') %>
 </div></div>
 
     <% end %>
@@ -239,7 +239,7 @@
 <br />
 
     <div class="row"><div class="sixteen columns"><div class="smiles_counter">
-      <p><div class="fa fa-smile-o">&nbsp;</div><%= @smiles.count %> Smiles <div class="fa fa-smile-o"></div></p>
+      <p><div class="fa fa-smile-o">&nbsp;</div><%= @smiles.count %> <%= t('app.views.welcome.index.smiles') %> <div class="fa fa-smile-o"></div></p>
     </div></div></div>
 
 <div id="smiles">
@@ -252,9 +252,9 @@
         </div>
         </br >
         <div class="whosmileswhere">
-        <%= if (smile.username != "") then smile.username else "Someone" end %>
-        smiling
-        <%= if (smile.country != "Your country (optional)") then "in " + smile.country else "somewhere" end  %>
+        <%= if (smile.username != "") then smile.username else t('app.views.welcome.index.someone') end %>
+        <%= t('app.views.welcome.index.smiling') %>
+        <%= if (smile.country != "Your country (optional)") then t('app.views.welcome.index.in') + " " + smile.country else t('app.views.welcome.index.somewhere') end  %>
         </div></div>
         <div class="four columns">&nbsp;
         </div>

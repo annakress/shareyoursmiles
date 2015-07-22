@@ -1,5 +1,20 @@
-# Sample localization file for English. Add more files in this directory for other locales.
+# Localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  app:
+    views:
+      welcome:
+        index:
+          faq: FAQ
+          legal_privacy: Legal&Privacy
+          what_made_you_smile_today: What made you smile today?
+          share_your_smile: Share your smile
+          your_name: Your name (optional)
+          your_country: Your country (optional)
+          your_email: Your email:
+          share_your_smile_btn: Share your smile
+          smiles: Smiles
+          someone: Someone
+          in: in
+          somewhere: somewhere

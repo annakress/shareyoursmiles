@@ -12,9 +12,10 @@ en:
           share_your_smile: Share your smile
           your_name: Your name (optional)
           your_country: Your country (optional)
-          your_email: Your email:
+          your_email: "Your email:"
           share_your_smile_btn: Share your smile
           smiles: Smiles
           someone: Someone
+          smiling: smiling
           in: in
           somewhere: somewhere

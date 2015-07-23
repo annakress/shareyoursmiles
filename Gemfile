@@ -26,6 +26,8 @@ gem "capistrano-rails"
 gem 'capistrano-passenger'
 gem "sprockets"
 
+gem 'meta-tags'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

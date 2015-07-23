@@ -72,6 +72,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta-tags (2.0.0)
+      actionpack (>= 3.0.0)
     mime-types (1.25.1)
     multi_json (1.11.1)
     mysql2 (0.3.18)
@@ -180,6 +182,7 @@ DEPENDENCIES
   font-awesome-rails
   haml
   jquery-rails
+  meta-tags
   mysql2
   rails (= 3.2.21)
   rails_best_practices

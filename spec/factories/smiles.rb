@@ -6,4 +6,8 @@ FactoryGirl.define do
     s.username { Faker::Name.first_name }
     s.country "Testcountry"
   end
+
+  factory :invalid_smile, parent: :smile do |s|
+    s.smiletext nil
+  end
 end

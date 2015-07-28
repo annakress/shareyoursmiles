@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-02T10:19:59+02:00">2015-07-02T10:19:59+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-28T14:25:20+02:00">2015-07-28T14:25:20+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">69.17%</span></span>
+    (<span class="covered_percent"><span class="red">71.81%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.7
+         0.74
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>30</b> files in total.
-    <b>133</b> relevant lines. 
-    <span class="green"><b>92</b> lines covered</span> and
-    <span class="red"><b>41</b> lines missed </span>
+    <b>31</b> files in total.
+    <b>149</b> relevant lines. 
+    <span class="green"><b>107</b> lines covered</span> and
+    <span class="red"><b>42</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#d48b085ac709d6aa79d9024c4b4b0bdaa6311f8d" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>3</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td class="red strong">80.0 %</td>
+        <td>10</td>
+        <td>5</td>
+        <td>4</td>
+        <td>1</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -163,9 +163,9 @@
       <tr>
         <td class="strong"><a href="#5b04d5589c717469939a6548a4e2b157010668ef" class="src_link" title="config/application.rb">config/application.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>62</td>
-        <td>12</td>
-        <td>12</td>
+        <td>73</td>
+        <td>15</td>
+        <td>15</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -263,9 +263,9 @@
       <tr>
         <td class="strong"><a href="#65433a176bc141119f275bdd332972030085f51b" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
-        <td>5</td>
-        <td>5</td>
+        <td>11</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -311,6 +311,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#e881c1983ad3b618640fcf3b8676d13c7ec575b4" class="src_link" title="spec/factories/smiles.rb">spec/factories/smiles.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>9</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#6115b192a531c808d06b2eacc81da9aaf506e2f9" class="src_link" title="spec/helpers/faq_helper_spec.rb">spec/helpers/faq_helper_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>15</td>
@@ -333,9 +343,9 @@
       <tr>
         <td class="strong"><a href="#782d6da8dd132b2f6fc79479675dba6d023aa974" class="src_link" title="spec/models/smile_spec.rb">spec/models/smile_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>13</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -369,11 +379,11 @@
         <div class="source_table" id="d48b085ac709d6aa79d9024c4b4b0bdaa6311f8d">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">80.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -386,13 +396,55 @@
           <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_filter :set_locale</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def set_locale</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    I18n.locale = params[:locale] || I18n.default_locale</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
           <code class="ruby">  protect_from_forgery</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">end</code>
@@ -1589,8 +1641,8 @@
     <h3>config/application.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1961,10 +2013,76 @@
         <li class="never" data-hits="" data-linenumber="61">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    config.generators do |g|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      g.test_framework :rspec,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">        :fixtures =&gt; true,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">        :view_specs =&gt; false,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">        :helper_specs =&gt; false,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">        :routing_specs =&gt; false,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby">        :controller_specs =&gt; true,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">        :request_specs =&gt; true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      g.fixture_replacement :factory_girl, :dir =&gt; &quot;spec/factories&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="73">
           
           
           <code class="ruby">end</code>
@@ -2765,8 +2883,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2823,6 +2941,18 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  get &#39;/legal&#39;, to: &#39;legal#index&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>
@@ -3015,6 +3145,78 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="e881c1983ad3b618640fcf3b8676d13c7ec575b4">
+  <div class="header">
+    <h3>spec/factories/smiles.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;faker&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">FactoryGirl.define do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  factory :smile do |s|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    s.smiletext &quot;My generated test smile&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    s.username { Faker::Name.first_name }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    s.country &quot;Testcountry&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>
@@ -3245,8 +3447,8 @@
     <h3>spec/models/smile_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3272,13 +3474,61 @@
           <code class="ruby">RSpec.describe Smile, :type =&gt; :model do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="4">
           
-          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;has a valid factory&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    FactoryGirl.create(:smile).should be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;is invalid without a smiletext&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    FactoryGirl.build(:smile, smiletext: nil).should_not be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">   </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>

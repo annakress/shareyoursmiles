@@ -44,15 +44,20 @@ group :production do
   gem 'mysql2'
 end
 
-group :development do
+group :development, :test do
   gem 'rails_best_practices'
   gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :test do
-  gem 'rspec-rails'
   gem 'test-unit', '~> 3.0'
   gem 'simplecov'
+  gem 'faker'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'launchy'
 end
 
 

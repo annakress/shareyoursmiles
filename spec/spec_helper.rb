@@ -21,6 +21,13 @@ require "capybara/rspec"
 require 'simplecov'
 SimpleCov.start
 
+ENV["RAILS_ENV"] ||= 'test'
+require File.expand_path("../../config/environment", __FILE__)
+require 'rspec/rails'
+require 'rspec/autorun'
+require "capybara/rspec"
+require 'database_cleaner'
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -45,6 +52,7 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
+  config.include Capybara::DSL
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin

@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-28T17:00:11+02:00">2015-07-28T17:00:11+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-28T17:40:27+02:00">2015-07-28T17:40:27+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">78.49%</span></span>
+    (<span class="covered_percent"><span class="red">80.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.82
+         0.84
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>31</b> files in total.
-    <b>172</b> relevant lines. 
-    <span class="green"><b>135</b> lines covered</span> and
-    <span class="red"><b>37</b> lines missed </span>
+    <b>32</b> files in total.
+    <b>180</b> relevant lines. 
+    <span class="green"><b>144</b> lines covered</span> and
+    <span class="red"><b>36</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,7 +57,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>1.2</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
@@ -92,12 +92,12 @@
       
       <tr>
         <td class="strong"><a href="#8d23aca052ec70d45bad11b6cdedb487e791f0a1" class="src_link" title="app/controllers/welcome_controller.rb">app/controllers/welcome_controller.rb</a></td>
-        <td class="red strong">66.67 %</td>
+        <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>3</td>
-        <td>2</td>
-        <td>1</td>
-        <td>0.7</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -360,6 +360,16 @@
         <td>1.0</td>
       </tr>
       
+      <tr>
+        <td class="strong"><a href="#779d0f24ee3fccad4b40edd78a25f9f3b6900d3f" class="src_link" title="spec/requests/welcome_spec.rb">spec/requests/welcome_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>19</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
     </tbody>
   </table>
 </div>
@@ -420,8 +430,8 @@
           <code class="ruby">  def set_locale</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="6">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
           
           <code class="ruby">    I18n.locale = params[:locale] || I18n.default_locale</code>
         </li>
@@ -1387,11 +1397,11 @@
         <div class="source_table" id="8d23aca052ec70d45bad11b6cdedb487e791f0a1">
   <div class="header">
     <h3>app/controllers/welcome_controller.rb</h3>
-    <h4><span class="red">66.67 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>3</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -1410,8 +1420,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3">
-          
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
           <code class="ruby">      @smiles = Smile.paginate(:page =&gt; params[:page], :per_page =&gt; 20,  :order =&gt; &#39;created_at DESC&#39;)</code>
         </li>
@@ -4111,6 +4121,138 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="779d0f24ee3fccad4b40edd78a25f9f3b6900d3f">
+  <div class="header">
+    <h3>spec/requests/welcome_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;spec_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;Welcome&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;Add a smile&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;Adds a new smile and displays the results TEST NOT COMPLETE YET&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit  &quot;/&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">      #expect{</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">        # click_link &#39;New Contact&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        fill_in &#39;smile_smiletext&#39;, with: &quot;My Test Smile comes here&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">        # TODO fill_in &#39;smile_username&#39;, with: &quot;Test Person&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">        # TODO fill_in &#39;smile_country&#39;, with: &quot;Testcountry&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        click_button &quot;Share your smile&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">      #}.to change(Smile,:count).by(1)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content &quot;My Test Smile comes here&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">      #page.should have_content &quot;Test Person&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">      #page.should have_content &quot;Testcountry&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>

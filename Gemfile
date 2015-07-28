@@ -13,8 +13,6 @@ gem 'betterlorem', '~> 0.1.2'
 
 gem 'will_paginate', '~> 3.0.7'
 
-gem 'haml'
-
 #gem 'font-awesome-less'
 
 #gem 'font-awesome-sass'
@@ -58,6 +56,7 @@ group :test do
   gem 'capybara'
   gem 'guard-rspec'
   gem 'launchy'
+  gem 'database_cleaner'
 end
 
 

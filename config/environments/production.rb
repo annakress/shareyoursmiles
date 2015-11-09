@@ -69,7 +69,7 @@ Shareyoursmiles::Application.configure do
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
    :address              => ENV['mailhoster_address'],
-   :port                 => ENV['mailhoster_port']
+   :port                 => ENV['mailhoster_port'],
    :user_name            => ENV['mailhoster_username'],
    :password             => ENV['mailhoster_password'],
    :authentication       => "plain",

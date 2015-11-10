@@ -72,7 +72,7 @@ Shareyoursmiles::Application.configure do
    :port                 => ENV['mailhoster_port'],
    :user_name            => ENV['mailhoster_username'],
    :password             => ENV['mailhoster_password'],
-   :authentication       => "plain",
+   :authentication       => "login",
    :enable_starttls_auto => true
   }
 end

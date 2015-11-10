@@ -52,6 +52,7 @@ class SmilesController < ApplicationController
     if ( @spamscore == 0)
          respond_to do |format|
          if @smile.save
+           NewSmileMailer.new_smile_email.deliver
            flash[:notice] = 'Thank you for sharing your beautiful smile!'
            format.html { redirect_to "/" }
          else

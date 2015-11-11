@@ -1,0 +1,20 @@
+<div id="smiles">
+    <% @smiles.each do |smile| %>
+        <div class="row">
+          <div class="four columns">&nbsp;
+          </div>
+        <div class="eight columns"><div class="smile">
+        <%= smile.smiletext %>
+        </div>
+        </br >
+        <div class="whosmileswhere">
+        <%= if (smile.username != "") then smile.username else t('app.views.welcome.index.someone') end %>
+        <%= t('app.views.welcome.index.smiling') %>
+        <%= if (smile.country != "Your country (optional)") then t('app.views.welcome.index.in') + " " + smile.country else t('app.views.welcome.index.somewhere') end  %>
+        </div></div>
+        <div class="four columns">&nbsp;
+        </div>
+
+        </div>
+    <% end %>
+</div>
